@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            body {
+                background-color: rgb(44, 44, 44);
+            }
+        </style>
+        <link rel="stylesheet" href="./code.css">
+        <title>XFight</title>
+    </head>
+    <body>
+
+    <main id="container">
+        
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="dots2">
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+            <div class="dot2"></div>
+        </div>
+        <div class="circle"></div>
+    </main>
+
+        <div class="container-button">
+            <a href="./zive vysilani.html">
+        <button class="my-button4">Živé vysílání</button>
+        </a>
+        <a href="./Zůčastnit se.html">
+        <button class="my-button3">zůčastním se</button>
+        </a>
+        <a href="./webovka.html">
+        <button class="my-button">Hlavní stránka</button>
+        </a>
+        <a href="./novinky.html">
+        <button class="my-button2">Novinky</button>
+        </a>
+    </div>
+        <div class="gray-rectangle">
+        </div>
+        <div class="container">
+            <img src="./zive vysilani.jpg" alt="Your Image" class="center-image"> 
+        </div> 
+        <div class="loader"></div>
+        <div class="lamp">
+            <div class="glass">
+              <div class="lava">
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob top"></div>
+                <div class="blob bottom"></div>
+              </div>
+            </div>
+          </div>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+    </body>
+</html>

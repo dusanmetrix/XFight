@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./login.css">
+        <title>XFight</title>
+        <style>
+            body {
+                background-color: rgb(44, 44, 44);
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./Formular.jpg" alt="Your Image" class="center-image"> 
+        <form action="https://sheetdb.io/api/v1/5taub3avu4fku" method="post" id="sheetdb-form">
+            <input type="Name" placeholder="Jméno" name="data[Name]"><br>
+            <input type="Surname" placeholder="Příjmení" name="data[Surname]"><br>
+            <input type="Email" placeholder="Email" name="data[Email]"><br>
+            <input type="Date" name="data[Date]"><br>
+            <input type="Tel" placeholder="Telefon" name="data[Tel]"><br>
+            <input type="submit" value="Odeslat">
+        </form>
+        <script>
+            var form = document.getElementById("sheetdb-form");
+            form.addEventListener("submit" , e => {
+                e.preventDefault();
+                fetch(form.action, { 
+                    method : "POST",
+                    body: new FormData(document.getElementById("sheetdb-form")),
+                }).then(
+                    response => response.json()
+                ).then((html) => {
+                    window.open('webovka.html', '_blank');
+                });
+            });
+        </script>
+    </body>
+</html>
